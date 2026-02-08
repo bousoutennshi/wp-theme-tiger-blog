@@ -1,0 +1,16 @@
+/**
+ * Main SCSS entry point
+ * This file will be processed by Vite and output to assets/main.css
+ */
+
+// Note: The existing CSS files (style.css, content.css, icon.css) will remain for now
+// This file is for any new styles or TypeScript-related styles
+// Future work: Migrate existing CSS to SCSS modules
+
+// Basic reset and utilities
+* {
+  box-sizing: border-box;
+}
+
+// Placeholder for future SCSS modules
+// Import additional SCSS files here as needed
