@@ -1,0 +1,84 @@
+/* Editor Styles for TIGER BLOG
+ * These styles apply to the block editor to make it look similar to the front-end
+ */
+
+/* Block Editor Styles */
+.editor-styles-wrapper {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	color: #333;
+}
+
+/* Custom Block Styles */
+
+/* Button - Rounded */
+.wp-block-button.is-style-rounded .wp-block-button__link {
+	border-radius: 50px;
+}
+
+/* Button - Outline */
+.wp-block-button.is-style-outline .wp-block-button__link {
+	background-color: transparent;
+	border: 2px solid currentColor;
+}
+
+/* Heading - Bordered */
+.wp-block-heading.is-style-bordered {
+	padding-bottom: 0.5rem;
+	border-bottom: 3px solid #333;
+}
+
+/* Heading - Underline */
+.wp-block-heading.is-style-underline {
+	position: relative;
+	padding-bottom: 1rem;
+}
+
+.wp-block-heading.is-style-underline::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 60px;
+	height: 3px;
+	background-color: #0073aa;
+}
+
+/* Paragraph - Highlight */
+.wp-block-paragraph.is-style-highlight {
+	background-color: #fff3cd;
+	padding: 1rem;
+	border-left: 4px solid #ffc107;
+}
+
+/* Quote - Border Accent */
+.wp-block-quote.is-style-border-accent {
+	border-left: 4px solid #0073aa;
+	padding-left: 1.5rem;
+	font-style: italic;
+}
+
+/* List - Checkmark */
+.wp-block-list.is-style-checkmark li {
+	list-style-type: none;
+	position: relative;
+	padding-left: 1.5rem;
+}
+
+.wp-block-list.is-style-checkmark li::before {
+	content: '✓';
+	position: absolute;
+	left: 0;
+	color: #0073aa;
+	font-weight: bold;
+}
+
+/* Wide and Full Width Alignment */
+.wp-block[data-align="wide"] {
+	max-width: 1200px;
+}
+
+.wp-block[data-align="full"] {
+	max-width: none;
+}

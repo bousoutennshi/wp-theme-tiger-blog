@@ -1,0 +1,100 @@
+/* Block Styles for Front-End
+ * CSS for custom block styles on the front-end
+ */
+
+/* Button - Rounded */
+.wp-block-button.is-style-rounded .wp-block-button__link {
+    border-radius: 50px;
+}
+
+/* Button - Outline */
+.wp-block-button.is-style-outline .wp-block-button__link {
+    background-color: transparent !important;
+    border: 2px solid currentColor;
+    color: inherit;
+}
+
+.wp-block-button.is-style-outline .wp-block-button__link:hover {
+    background-color: currentColor !important;
+    color: #fff;
+}
+
+/* Heading - Bordered */
+.wp-block-heading.is-style-bordered,
+h1.is-style-bordered,
+h2.is-style-bordered,
+h3.is-style-bordered,
+h4.is-style-bordered,
+h5.is-style-bordered,
+h6.is-style-bordered {
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #333;
+}
+
+/* Heading - Underline */
+.wp-block-heading.is-style-underline,
+h1.is-style-underline,
+h2.is-style-underline,
+h3.is-style-underline,
+h4.is-style-underline,
+h5.is-style-underline,
+h6.is-style-underline {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.wp-block-heading.is-style-underline::after,
+h1.is-style-underline::after,
+h2.is-style-underline::after,
+h3.is-style-underline::after,
+h4.is-style-underline::after,
+h5.is-style-underline::after,
+h6.is-style-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #0073aa;
+}
+
+/* Paragraph - Highlight */
+.wp-block-paragraph.is-style-highlight,
+p.is-style-highlight {
+    background-color: #fff3cd;
+    padding: 1rem;
+    border-left: 4px solid #ffc107;
+}
+
+/* Quote - Border Accent */
+.wp-block-quote.is-style-border-accent,
+blockquote.is-style-border-accent {
+    border-left: 4px solid #0073aa;
+    padding-left: 1.5rem;
+    font-style: italic;
+}
+
+/* List - Checkmark */
+.wp-block-list.is-style-checkmark,
+ul.is-style-checkmark,
+ol.is-style-checkmark {
+    list-style-type: none;
+}
+
+.wp-block-list.is-style-checkmark li,
+ul.is-style-checkmark li,
+ol.is-style-checkmark li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.wp-block-list.is-style-checkmark li::before,
+ul.is-style-checkmark li::before,
+ol.is-style-checkmark li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #0073aa;
+    font-weight: bold;
+}
